@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body {
+		    background:#404440;
+		    height:100%;
+		    padding:30px 30px;
+		    margin:0;
+		}
+
+		input[type="checkbox"] {
+		    display:none;
+		}
+
+		input[type="checkbox"] + label {
+		    color:#2daeee;
+		    cursor:pointer;
+		    background-color: white;
+		    padding: 3px;
+		    user-select: none;
+		    border: 4px outset white;
+		}
+
+		input[type="checkbox"] + label span {
+		    display:inline-block;
+		    width:20px;
+		    height:20px;
+		    vertical-align: middle;
+		}
+
+		input[type="checkbox"]:checked + label span {
+		    background-image: url("./check.jpg");
+		    background-size: contain;
+		    background-repeat: no-repeat;
+		}
+
+		input[type="checkbox"]:checked + label {
+		    border: 4px inset white;
+		}
+
+		input[type="radio"] {
+		    display:none;
+		}
+
+		input[type="radio"] + label {
+		    color:#2daeee;
+		    cursor:pointer;
+		    background-color: white;
+		    padding: 3px;
+		    user-select: none;
+		    border: 4px outset white;
+		}
+
+		input[type="radio"] + label span {
+		    display:inline-block;
+		    width:20px;
+		    height:20px;
+		    vertical-align: middle;  
+		}
+
+		input[type="radio"]:checked + label span {
+		    background-image: url("./check.jpg");
+		    background-size: contain;
+		    background-repeat: no-repeat;
+		}
+
+		input[type="radio"]:checked + label {
+		    border: 4px inset white;
+		}
+	</style>
+</head>
+<body>
+	<p>
+		<input type="checkbox" name="check1" id="check1">
+	    <label for="check1"><span></span>CheckBox1</label>
+	    <br><br>
+	    <input type="checkbox" name="check2" id="check2">
+	    <label for="check2"><span></span>CheckBox2</label>
+		<br><br>
+	</p>
+	<p>
+	    <input type="radio" name="radio" id="radio1" />
+	    <label for="radio1"><span></span>RadioButton1</label>
+	 	<br><br>
+	    <input type="radio" name="radio" id="radio2" />
+	    <label for="radio2"><span></span>RadioButton2</label>
+	 	<br><br>
+	 </p>
+</body>
+</html>
